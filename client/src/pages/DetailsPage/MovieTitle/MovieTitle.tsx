@@ -40,16 +40,16 @@ const MovieTitle = () => {
       <div
         className={`mx-auto drop-shadow-lg ${
           movieDetail?.movie.backdrop ? 'mt-60' : 'mt-32'
-        }  w-[1320px] px-8 text-white`}
+        }  w-[1320px] px-8 text-white costombp:mt-20`}
       >
-        <p className="mb-1 text-7xl font-bold">{movieDetail?.movie.title}</p>
-        <p className="mb-4 ml-1 text-xl">{movieDetail?.movie.titleEng}</p>
-        <p className="text-2xl font-medium">
+        <p className="mb-1 text-7xl font-bold costombp:text-4xl">{movieDetail?.movie.title}</p>
+        <p className="mb-4 ml-1 text-xl costombp:text-sm">{movieDetail?.movie.titleEng}</p>
+        <p className="text-2xl font-medium costombp:text-base">
           {movieDetail?.movie.repRlsDate} ·{' '}
           {movieDetail?.movie.genre.length !== 0 ? movieDetail?.movie.genre : '(장르)'} ·{' '}
           {movieDetail?.movie.nation.length !== 0 ? movieDetail?.movie.nation : '(국가)'}
         </p>
-        <p className="text-2xl font-medium">
+        <p className="text-2xl font-medium costombp:text-base">
           {movieDetail?.movie.runtime.length !== 0
             ? movieDetail?.movie.runtime + '분'
             : '(상영시간)'}{' '}

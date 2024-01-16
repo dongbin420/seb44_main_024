@@ -7,6 +7,8 @@ export default {
       bp2: { max: '817px' },
       bp3: { max: '980px' },
       bp4: { min: '640px' },
+      costombp: { raw: '(max-height: 700px)' },
+      costombp2: { raw: '(max-height: 500px)' },
     },
     extend: {
       colors: {
