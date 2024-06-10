@@ -27,6 +27,5 @@ jobs:
         run: |
           aws s3 sync \
             --region ap-northeast-2 \
-            dist s3://${{ secrets.AWS_S3_BUCKET }}
-            --delete
+            dist s3://${{ secrets.AWS_S3_BUCKET }} --delete
         working-directory: ./client
